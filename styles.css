@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+
+body {
+    background-color: black;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
+h1 {
+    color: #F39F5A;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px;
+}
+
+h3 {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: white;
+    font-weight: 100;
+}
+
+
+#box-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #C0DEFF;
+    height: 480px;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: #D0A2F7;
+    margin: 0px 260px;
+    filter: drop-shadow(10px 10px 1px #D0A2F7);
+    gap: 40px;
+}
+
+
+.ladIzq{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr;
+    gap: 30px;
+    justify-content: center;
+
+}
+
+.textYbtn-LadoIzq{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+gap: 30px;
+justify-content: center;
+align-items: center;
+}
+
+.text-btn{
+    
+    filter: drop-shadow(2px 1px 1px grey);
+    color: #C0DEFF ;
+    font-weight: bold;
+    padding:5px;
+    transform: rotate(-1deg);
+    position: relative;
+    top: -1px;
+    left: 15px;
+}
+
+.btn-ladoIzq{
+background-color: #FF8DC7;
+height: 30px;
+width: 30px;
+border-radius: 50%;
+color: #FF8DC7;
+padding: 5px;
+}
+
+.border-btn{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+border: 2px solid #C0DEFF;
+border-radius: 30%;
+filter: drop-shadow(2px 2px 2px grey);
+transform: rotate(10deg);
+position: relative;
+top: -10px;
+left: -15px;
+padding: 5px;
+}
+
+.flechas {
+    width: 130px;
+    height: 130px;
+    filter: drop-shadow(2px 3px 4px black);
+}
+
+.ladoDerch{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+gap: 40px;
+transform: rotate(-15deg);
+position: relative;
+top: -10px;
+right: -10px;
+}
+
+.hr-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.hr-ladoDerech{
+border: 2px solid #C0DEFF;
+border-radius: 30%;
+filter: drop-shadow(2px 2px 2px grey);
+transform: rotate(-10deg);
+position: relative;
+top: 10px;
+right: 6px;
+padding: 3px;
+}
+
+.btn {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: x-large;
+    font-weight:100;
+    border: none;
+    background-color: #FF8DC7;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 4px grey);
+    margin: 10px;
+}
+ 
+.cajaCentro {
+    padding: 30px;
+    width: 500px;
+    height: 380px;
+    background-color: #F3F1F5;
+    border-radius: 2%;
+    border-style: inset;
+    border-color: #F3F1F5;
+}
+
+.textoConsola {
+    color: black;
+}
+
+.nombreconsola {
+    padding: 10px;
+    color: grey;
+    font-style: oblique;
+}
+
+.pantalla {
+    background-image: url("./Img/ImgGamenPaisaje1.jpg");
+}
+
+
+.img {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+
+.partaBaja{
+    display: none;
+}
+
+
+/* medias */
+
+@media (max-width: 900px) {
+    
+
+
+    #box-principal {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: #C0DEFF;
+        border-style: solid;
+        border-color: #D0A2F7;
+        filter: drop-shadow(10px 10px 1px #D0A2F7);
+        gap: 5px;
+        height: 800px;
+        width: 500px;
+        margin: 20px 100px;
+        padding: 40px;
+
+    }
+
+    #box-principal .item-orden:nth-child(1){
+      display: none;
+    }
+
+    #box-principal .item-orden:nth-child(2){
+        order: -1;
+    }
+    #box-principal .item-orden:nth-last-child(1){
+        display: none;
+    }
+
+
+}
+
+
+
+@media (max-width: 900px) {
+
+
+        .ladIzq{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            justify-content: center;
+        
+        }
+
+        .textYbtn-LadoIzq{
+            order: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            }
+
+
+            .btn-ladoIzq{
+            background-color: #FF8DC7;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            color: #FF8DC7;
+            padding: 5px;
+            }
+
+
+        .ladoDerch{
+  
+            transform: none;
+            position: none;
+
+    }
+
+        .hr-box{
+            display: grid;
+
+        }
+        .hr-ladoDerech{
+        border: 2px solid #C0DEFF;
+        border-radius: 30%;
+        filter: drop-shadow(2px 2px 2px grey);
+        transform: none;
+        position: none;
+
+        }
+ 
+        .partaBaja{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 40px;
+        transform: none;
+        position: none
+        ;
+    
+
+    }
+}
